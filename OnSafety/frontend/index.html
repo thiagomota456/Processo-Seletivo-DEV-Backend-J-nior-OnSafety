@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciamento de Pessoas</title>
+</head>
+<body>
+    <h1>Gerenciamento de Pessoas</h1>
+
+    <!-- Formulário para criar pessoa -->
+    <form id="createPersonForm">
+        <input type="text" id="nome" placeholder="Nome" required>
+        <input type="text" id="cpf" placeholder="CPF" required>
+        <input type="date" id="dataNascimento" placeholder="Data de Nascimento" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <button type="submit">Criar Pessoa</button>
+    </form>
+
+    <!-- Botão para listar pessoas -->
+    <button id="listPeopleButton">Listar Pessoas</button>
+    <ul id="peopleList"></ul>
+
+    <!-- Consulta de pessoa por ID -->
+    <input type="number" id="personId" placeholder="ID da Pessoa">
+    <button id="getPersonButton">Consultar Pessoa</button>
+    <div id="personDetails"></div>
+
+    <!-- Deletar pessoa por ID -->
+    <input type="number" id="deleteId" placeholder="ID da Pessoa">
+    <button id="deletePersonButton">Deletar Pessoa</button>
+    <div id="deleteMessage"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
